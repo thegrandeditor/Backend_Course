@@ -8,7 +8,7 @@ Database: MySql, MongoDB
 
 1. Init git/ creating and cloning a repository
 2. add files // git add (location of the file or . for all files that have local changess)
-3. commit your files // git commit -m'the message for the commit. should descriptive'
+3. commit your files // git commit -m'the message for the commit. should be descriptive'
 4. push changes // git push
 5. pull online updates // git pull // to download online changes that are not available in your machine
 6. create a branch // git branch branch_name
