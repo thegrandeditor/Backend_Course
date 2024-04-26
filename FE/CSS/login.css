@@ -9,6 +9,166 @@
   border: 1px solid rgba(0, 0, 0, 0.125);
   /* background-color: #fff; */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* animation: move-box 2s ease-in-out infinite */
+}
+
+@keyframes dancing-icon {
+  0% {
+
+    transform: translateY(0);
+  }
+
+  5% {
+    transform: translateX(0);
+  }
+
+  10% {
+    transform: translateX(100px);
+
+  }
+
+  15% {
+    transform: translateY(100px);
+  }
+
+  20% {
+    transform: translateX(0);
+
+  }
+
+  25% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateX(0);
+
+  }
+
+  35% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateX(0);
+
+  }
+
+  45% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateX(0);
+
+  }
+
+  55% {
+    transform: translateY(0);
+  }
+
+  60% {
+    transform: translateX(0);
+
+  }
+
+  65% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateX(0);
+
+  }
+
+  75% {
+    transform: translateY(0);
+  }
+
+  80% {
+    transform: translateX(0);
+
+  }
+
+  85% {
+    transform: translateY(0);
+  }
+
+  90% {
+    transform: translateX(0);
+
+  }
+
+  95% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateX(0);
+
+  }
+
+}
+
+@keyframes move-box {
+  0% {
+
+    transform: translateY(0);
+    background-color: #495057;
+    color: wheat;
+  }
+
+
+
+  50% {
+    transform: translateX(100px);
+    background-color: red;
+    color: whitesmoke;
+  }
+
+  100% {
+    transform: translateX(0);
+    background-color: blue;
+    color: white;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-50px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .login-page {
@@ -36,6 +196,7 @@
 .title {
   font-size: 32px;
   font-weight: bold;
+  animation: spin 2s ease-in-out
 }
 
 .socials {
@@ -48,9 +209,14 @@ img {
   height: 40px;
 }
 
+img {
+  animation: spin 5s ease-in-out 1s infinite
+}
+
 .signup {
   margin-top: 50px;
   font-weight: bold;
+  animation: bounce 5s ease-in-out 1s infinite
 }
 
 .login-btn {
@@ -60,6 +226,12 @@ img {
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  animation: fade-in 2s ease-in-out 1s;
+
+}
+
+.bounce {
+  animation: bounce 5s ease-in-out 1s
 }
 
 .password {
@@ -118,3 +290,22 @@ a {
   text-decoration: none;
   color: rgb(36, 35, 35);
 }
+
+/* 
+keyframe
+duration
+delay
+iteration
+direction
+
+properties include
+animation: name duration timing delay iteration-count
+animation-name,
+animation-duration
+animation-timing-function
+animation-delay
+...-delay
+...-iteration-count
+...-direction
+
+*/
