@@ -1,0 +1,7 @@
+.row {
+  display: grid;
+  gap: 20px;
+  row-gap: 50px;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: minmax(300px, 500px)
+}
